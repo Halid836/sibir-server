@@ -1,5 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy.orm import Session, or_
+from sqlalchemy.orm import Session
+from sqlalchemy import or_
 from ..database import get_db
 from ..models import Chat, Message, User
 from ..schemas import ChatOut, MessageIn, MessageOut
